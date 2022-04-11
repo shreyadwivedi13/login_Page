@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="./styles/resets.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/admin-panel.css">
+</head>
+
+<body>
+    <header style="width: 100%;text-align: right;">
+        <!--<a href="./index.html" style="/*! width: 100%; */display: inline;text-decoration: none;border: 1px solid var(--light-clr);margin: 75px;padding: 0.5em 1em;background-color: var(--primary-clr);color: var(--light-clr);">Logout</a>-->
+        <button class="btn btn--signout" id="signout">Signout</button>
+    </header>
+    <!-- ADMIN PANEL -->
+    <main class="admin-panel" id="blur">
+        <div class="container">
+            <input class="admin-panel__search" type="text" name="search" id="search" placeholder="Enter user info to search">
+
+            <div class="admin-panel__content"></div>
+        </div>
+    </main>
+    <form class="edit-form" id="popup">
+        <div class="edit-form__item">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+            <span class="error" id="errorname"></span>
+        </div>
+
+        <div class="edit-form__item">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+            <span class="error" id="errorname1"></span>
+        </div>
+        <div class="edit-form__item">
+            <label for="username">Username</label>
+            <input type="text" id="username" disabled>
+        </div>
+        <div class="edit-form__item">
+            <label for="email">Email </label>
+            <input type="text" id="email" disabled>
+        </div>
+        <div class="edit-form__item">
+            <label for="password">Password</label>
+            <input type="text" id="password" disabled>
+            <span class="error" id="errorname4"></span>
+        </div>
+        <div class="edit-form__item">
+            <button class="btn btn--save" onclick="popup()">Save</button>
+        </div>
+    </form>
+    <!-- ADMIN PANEL END -->
+    <script src="./js/util.js"></script>
+    <script src="./js/admin-panel.js"></script>
+
+</body>
+
+</html>

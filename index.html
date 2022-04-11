@@ -1,0 +1,91 @@
+<!--
+    Create a simple "User" CRUD registration page with Search functionality.
+        a. Validations should be there.
+        b. Proper naming conventions should be followed.
+        c. Make it as good looking as you can.
+        d. OOPS mandatory and must be use wisely.
+
+    @auther : Shreya Dwivedi
+-->
+<!--This is the main page of our login website-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/resets.css">
+</head>
+
+<body>
+    <!-- Main -->
+    <main class="main">
+        <h1 class="main__heading">You are?</h1>
+        <div class="main__row">
+            <button class="btn btn--user" id="user-login">USER LOGIN</button>
+            <button class="btn" id="admin-login">ADMIN LOGIN</button>
+        </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Login -->
+    <form class="inactive" id="login" method="POST">
+        <div class="login__row">
+            <button class="login__back">&larr;</button>
+            <h2 class="login__heading"></h2>
+        </div>
+        <label class="sr-only" data-error="invalid or empty input" for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Username">
+        <label class="sr-only" data-error="invalid or empty input" for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <span class="error" id="login-error"></span>
+        <input class="btn btn--user" id="login-submit" type="submit" value="Login">
+        <p class="inactive" id="signup">dont have account? <button class="login__signup-btn">Sign Up</button></p>
+    </form>
+    <!-- Login End -->
+
+    <!-- Sign Up -->
+    <form class="inactive" id="signup-form">
+        <div class="signup__row">
+            <button class="signup__back">&larr;</button>
+            <h2 class="signup__heading">Sign Up</h2>
+        </div>
+
+        <label class="sr-only" for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+        <span class="error" id="errorname"></span>
+
+        <label class="sr-only" for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+        <span class="error" id="errorname1"></span>
+
+        <label class="sr-only" for="signup-username">Username</label>
+        <input type="text" name="signup-username" id="signup-username" placeholder="Username">
+        <span class="error" id="errorname2"></span>
+
+        <label class="sr-only" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <span class="error" id="errorname3"></span>
+
+        <label class="sr-only" for="signup-password">Password</label>
+        <input type="password" name="signup-password" id="signup-password" placeholder="Password">
+        <span class="error" id="errorname4"></span>
+
+        <input class="btn btn--user" id="signup-submit" type="submit" value="Sign Up">
+    </form>
+    <!-- Sign Up End -->
+
+    <!-- JS -->
+    <script src="./js/constant.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

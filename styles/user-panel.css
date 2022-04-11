@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.user-panel__heading {
+    font-size: var(--fs-xlarge);
+    font-weight: 100;
+}
+
+btn--edit {
+    margin-right: 1em;
+}
+
+.btn--del:hover {
+    background-color: var(--danger-clr);
+    color: var(--light-clr);
+    border: 0.1em solid var(--light-clr);
+}
+
+.no-results {
+    width: 100%;
+    text-align: center;
+}
+
+.edit-form {
+    background-color: var(--dark-clr);
+    border-radius: 0.2em;
+    max-width: 20em;
+    min-height: 10em;
+    width: 100%;
+    padding: var(--m-medium);
+}
+
+.edit-form__item {
+    width: 100%;
+    font-size: var(--fs-small);
+    color: var(--secondary-clr);
+    padding-inline: var(--m-small);
+    padding-block: var(--m-small);
+    border: 0.1em solid var(--light-clr);
+    border-radius: 0.1em;
+    outline: var(--primary-clr)
+}
+
+.btn--save {
+    border: none;
+    background: none;
+    color: var(--secondary-clr);
+    font-size: var(--fs-base);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn--save:hover {
+    color: var(--primary-clr);
+}
+
+.btn--edit {
+    border: none;
+    background: none;
+    color: var(--secondary-clr);
+    font-size: var(--fs-base);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn--edit:hover {
+    color: var(--primary-clr);
+}
+
+.btn--signout {
+    border: none;
+    background: none;
+    color: var(--secondary-clr);
+    font-size: var(--fs-base);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn--signout:hover {
+    color: var(--primary-clr);
+}
+
+.btn--profile {
+    border: none;
+    background: none;
+    color: var(--secondary-clr);
+    font-size: var(--fs-base);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn--profile:hover {
+    color: var(--primary-clr);
+}

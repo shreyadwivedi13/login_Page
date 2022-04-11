@@ -1,0 +1,82 @@
+:root {
+    --dark-clr: #1a1a1a;
+    --light-clr: #fafafa;
+    --primary-clr: #2c3e50;
+    --secondary-clr: #6ca2d9;
+    --success-clr: #4caf50;
+    --danger-clr: #f44336;
+    --warning-clr: #ffeb3b;
+    --info-clr: #2196f3;
+    --light-gray: #f5f5f5;
+    --dark-gray: #e0e0e0;
+    --white: #fff;
+    --black: rgb(0, 0, 0);
+    --transparent: transparent;
+    --font-family: "Roboto", sans-serif;
+    --fs-small: 0.8em;
+    --fs-base: 1rem;
+    --fs-medium: 1.6rem;
+    --fs-large: 2.4rem;
+    --fs-xlarge: 3.2rem;
+    --m-small: 0.4em;
+    --m-base: 0.8em;
+    --m-medium: 1.6em;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    color: var(--light-clr);
+    font-family: var(--font-family);
+    font-size: var(--fs-base);
+}
+
+
+/* Utility class */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-block: 5%;
+}
+
+
+/* Content will be hidden and readable by screen readers */
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.sr-only[data-error].input {
+    border-color: #f44336;
+    background: #d89994;
+}
+
+
+/* Global button CSS */
+
+.btn {
+    background-color: var(--transprant);
+    border: none;
+    border-radius: 0.2em;
+    color: var(--light-clr);
+    font-size: var(--fs-small);
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding: 0.5em 1em;
+    transition: all 0.2s ease-in-out;
+    border: 0.1em solid var(--light-clr);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--light-clr);
+    border: 0.1em solid var(--primary-clr);
+    color: var(--dark-clr);
+}

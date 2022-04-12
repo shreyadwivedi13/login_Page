@@ -103,11 +103,7 @@ editBtn.addEventListener("click", (event) => {
     });
     const signoutBtn = document.querySelector("#signout"); // signout button
     signoutBtn.addEventListener("click", (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-
-        sessionStorage.removeItem("activeUsername"); // removing the active username from the session storage
-        window.location.href = "index.html"; // redirecting to the index page
+           window.location.href = "index.html"; // redirecting to the index page
     });
 });
 
@@ -132,11 +128,7 @@ function displayUserInfo() {
     displayContentBlock.insertAdjacentHTML("afterbegin", row);
     const signoutBtn = document.querySelector("#signout"); // signout button
     signoutBtn.addEventListener("click", (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-
-        sessionStorage.removeItem("activeUsername"); // removing the active username from the session storage
-        window.location.href = "index.html"; // redirecting to the index page
+         window.location.href = "index.html"; // redirecting to the index page
     });
 }
 
